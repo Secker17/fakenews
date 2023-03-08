@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slik unngår du falske nyheter</title>
+    <link rel="stylesheet" type="text/css" href="../finnut/finnut.css">
+</head>
+
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Secker</h2>
+      <div class="toggle"></div>
+    </header>
+    <div class="overlay"></div>
+
+    </div>
+
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+
+  
+      <div id="typedtext"></div>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">Fake News</a></li>
+      <li><a href="../Tips/tips.html">Tips</a></li>
+      <li><a href="#">Hjelp</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </div>
+        
+  <script>
+   var aText = new Array(
+"",
+"",
+"Hei der! Du trykket mest sansynlig på les mer knappen. Det betyr vell at du vil lær om fake news.", 
+"",
+"Jeg syns det er rart at du valgte å trykke på knappen selvom du så reklamen om free robux.",
+"",
+"Dette unnerstreker bare at du er nødt til å lære deg mer om fake news slik at du neste gang ikke tar så dumme valg.",
+"",
+"Fake news er en form for desinformasjon som sprer seg raskt på sosiale medier og andre digitale plattformer.",
+"",
+"Hvis jeg hadde vert deg hadde jeg gått i menyen og trykket på tips! Der kan du lære hvordan ungå fake news.",
+
+
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+</script>
+  
+  
+
+</p>
+<script> const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    })</script>
+</body>
+</html>
