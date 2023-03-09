@@ -1,51 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  form {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  input[type="text"] {
-    width: 300px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-  }
-  
-  button[type="submit"] {
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #3e8e41;
-  }
-  
-  #result {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
-  
+
 
  .footer{
   
@@ -299,3 +252,18 @@ body {
     height: 500px;
     
     }
+    
+    body {
+    
+        font-family:"Open Sans", Helvetica, Arial, sans-serif;
+        font-weight:300;
+        font-size: 12px;
+        line-height:30px;
+        color:#777;
+        
+    }
+
+
+
+
+    

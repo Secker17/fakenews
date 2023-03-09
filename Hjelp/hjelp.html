@@ -1,36 +1,46 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Nettsjekk</title>
-    <link rel="stylesheet" type="text/css" href="Hjelp.css">
-  </head>
-  <body>
-    <section class="showcase">
-        <header>
-          <h2 class="logo">Secker</h2>
-          <div class="toggle"></div>
-        </header>
-        <div class="overlay"></div>   
-      </section>
-      <div class="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="/finnut/finnut.html">Fake News</a></li>
-          <li><a href="/Tips/tips.html">Tips</a></li>
-          <li><a href="/Hjelp/hjelp.html">Hjelp</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slik unngår du falske nyheter</title>
+    <link rel="stylesheet" type="text/css" href="../Hjelp/Hjelp.css">
+</head>
+
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Secker</h2>
+      <div class="toggle"></div>
+    </header>
+    <div class="overlay"></div>
+    <div class="text">
+        <h2>Link tester</h2> 
+        <h3>Kommer snart</h3>
+        <p></p>
       </div>
+  
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="/finnut/finnut.html">Fake News</a></li>
+      <li><a href="/Tips/tips.html">Tips</a></li>
+      <li><a href="/Hjelp/hjelp.html">Hjelp</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </div>
+        
 
 
-      <h1>Nettsjekk</h1>
-      <form>
-        <label for="url-input">Skriv inn en URL:</label>
-        <input type="text" id="url-input" placeholder="https://www.example.com">
-        <button type="submit" id="check-button">Sjekk</button>
-      </form>
-      <div id="result"></div>
-      <script src="/Hjelp/hjelp.js"></script>
+  
 
+</p>
+<script> const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    })</script>
 </body>
 </html>
