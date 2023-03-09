@@ -260,6 +260,45 @@
         font-size: 12px;
         line-height:30px;
         color:#777;
-        background:#0CF;
         
     }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 45%;
+      }
+      
+      label, input, textarea {
+        margin-bottom: 10px;
+      }
+      
+      label {
+        font-weight: bold;
+      }
+      
+      input, textarea {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+      }
+      
+      textarea {
+        height: 150px;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      
